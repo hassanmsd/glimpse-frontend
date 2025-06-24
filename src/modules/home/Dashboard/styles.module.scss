@@ -1,0 +1,27 @@
+.DocumentGrid {
+  padding: 10px;
+  padding-top: 0px;
+
+  & :global(.MuiDataGrid-columnHeaders) {
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
+
+  & :global(.MuiDataGrid-cell) {
+    border: none !important;
+  }
+
+  & :global(.MuiDataGrid-row) {
+    box-shadow: inset 0px 0px 0px 1px #e0e6f5;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+  }
+
+  & :global(.MuiDataGrid-footerContainer) {
+    border: none;
+  }
+
+  & :global(.MuiDataGrid-columnHeaderTitleContainerContent) {
+    overflow: visible !important;
+  }
+}
