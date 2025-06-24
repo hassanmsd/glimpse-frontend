@@ -42,7 +42,12 @@ const LogIn = () => {
       // Redirect user to home page after successful login
       navigate("/");
     } catch (err: any) {
-      setError(err.message || "Failed to sign up.");
+      // Handle known Firebase error or fallback to generic error
+      const errorMessage =
+        err.code === "auth/invalid-credential"
+          ? "Invalid Credentials"
+          : "Failed to login";
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }

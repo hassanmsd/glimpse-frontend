@@ -8,7 +8,11 @@ import {
 
 import { INTEREST_LEVEL, LeadsData, SOURCE, STATUS } from "../types/global";
 
-const API_URL = "http://localhost:5000";
+// for locat testing
+// const API_URL = "http://localhost:5000";
+
+// for prod
+const API_URL = "https://glimpse-backend-indol.vercel.app";
 
 const saveLeadsInBulk = async ({ data }: SaveLeadsInBulkParams) => {
   try {

@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# Project Structure & Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Project Folder Structure
+
+- **`/pages`**  
+  Contains the main page components for the app, each representing a route or view.
+
+- **`/modules`**  
+  Contains feature-specific modules — collections of components and logic related to a particular feature or section of the app.
+
+- **`/components`**  
+  Contains reusable UI components that can be shared across different pages and modules.
+
+- **`/api`**  
+  Contains functions and modules responsible for API calls and backend communication.
+
+- **`/constants`**  
+  Stores global constant values used throughout the app, such as enums, strings, or config values.
+
+- **`/context`**  
+  Contains React context providers and hooks to manage global app state. Currently includes Firebase Authentication context.
+
+- **`/hoc`**  
+  Contains Higher Order Components (HOCs) used to wrap other components. For example, the ProtectedRoute component for route guarding.
+
+- **`/lib`**  
+  Contains app-wide services or utility libraries. Currently includes Firebase setup and initialization.
+
+- **`/types`**  
+  Contains TypeScript global types and interfaces for the project.
+
+- **`/utils`**  
+  Contains helper functions and utilities used across the app.
+
+---
 
 ## Available Scripts
 
@@ -8,39 +42,31 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
+The page reloads if you make edits and shows lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.  
+See the [running tests documentation](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder.  
+Bundles React in production mode, optimizes the build for best performance, minifies files, and includes hashes in filenames for caching.  
+See the [deployment documentation](https://facebook.github.io/create-react-app/docs/deployment) for details.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Warning:** This is a one-way operation. Once you `eject`, you can’t go back!  
+Ejecting removes the build dependency and copies the build configuration files and dependencies (webpack, Babel, ESLint, etc.) into your project for full control.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Read the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) to learn more about the build setup.
+- Check out the [React documentation](https://reactjs.org/) to learn React fundamentals and best practices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
